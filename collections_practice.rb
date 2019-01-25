@@ -26,7 +26,7 @@ def kesha_maker(array)
 end
 
 def find_a(array)
-  array.select {|letter| start_with? ("a")}
+  array.select {|letter| letter.start_with? ("a")}
 end
 
 def sum_array(array)
@@ -34,6 +34,6 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect {|element,index| "#{element + "s"}, #{index [0,2,3] }" }
+  array.each_with_index.collect {|element,index| "#{element + "s"}, #{index }" }
 
 end
